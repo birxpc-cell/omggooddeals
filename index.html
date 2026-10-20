@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMG Good Deals — Official WhatsApp Channel</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // Yahan apna Meta Pixel ID dalein (e.g., '1468057015263546')
+    fbq('init', 'YOUR_PIXEL_ID_HERE'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: #0f0a1c;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Top Radiant Glow */
+        .top-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(180deg, #ff0055 0%, #ff5200 50%, rgba(255, 82, 0, 0) 100%);
+            filter: blur(20px);
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 420px;
+            padding: 30px 18px 20px 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Live Deals Pill Badge */
+        .loot-badge {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 82, 0, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 800;
+            color: #ffcc00;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 18px;
+            animation: pulse 2s infinite;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #25d366;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #25d366;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* Profile Photo Frame */
+        .profile-wrapper {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffcc00;
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.4);
+            background-color: #1a1528;
+        }
+
+        .wa-badge {
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+            background: #25d366;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #0f0a1c;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .wa-badge svg {
+            width: 20px;
+            height: 20px;
+            fill: #ffffff;
+        }
+
+        /* Title & Tagline */
+        .channel-title {
+            font-size: 28px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .channel-subtitle {
+            font-size: 14px;
+            color: #cbd5e1;
+            line-height: 1.5;
+            font-weight: 500;
+            max-width: 360px;
+            margin-bottom: 22px;
+        }
+
+        /* Main Card Container */
+        .card {
+            background: rgba(26, 20, 42, 0.85);
+            border-radius: 24px;
+            padding: 22px 18px;
+            width: 100%;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Features List */
+        .loot-features {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-item span {
+            font-size: 16px;
+        }
+
+        /* Big Green WhatsApp Button */
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            border-radius: 18px;
+            padding: 14px 16px;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            border: 2px solid #70e000;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 16px;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        .cta-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon-box {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-box svg {
+            width: 26px;
+            height: 26px;
+            fill: #ffffff;
+        }
+
+        .btn-text {
+            text-align: left;
+        }
+
+        .btn-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .btn-sub {
+            font-size: 12px;
+            color: #dcfce7;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .arrow-circle {
+            width: 36px;
+            height: 36px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow-circle svg {
+            width: 18px;
+            height: 18px;
+            fill: #128c7e;
+        }
+
+        /* Steps */
+        .steps-info {
+            font-size: 12px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        .steps-info strong {
+            color: #ffcc00;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 11px;
+            color: #64748b;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .footer-ads {
+            margin-top: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #94a3b8;
+        }
+
+        .footer-ads a {
+            color: #25d366;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .footer-ads a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Glow background -->
+    <div class="top-banner"></div>
+
+    <div class="container">
+        <!-- Live Alert Badge -->
+        <div class="loot-badge">
+            <span class="dot"></span> 🔥 LIVE AMAZON & FLIPKART LOOT DEALS
+        </div>
+
+        <!-- Profile Image -->
+        <div class="profile-wrapper">
+            <img src="https://i.ibb.co/358QXSKb/Picsart-26-10-20-10-28-16-233.png" alt="OMG Good Deals" class="profile-img">
+            <div class="wa-badge">
+                <svg viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Channel Title & Tagline -->
+        <h1 class="channel-title">OMG Good Deals</h1>
+        <p class="channel-subtitle">Get 80-90% OFF Price Error Deals, Amazon Loot Offers & Free Shopping Alerts!</p>
+
+        <!-- Main Card -->
+        <div class="card">
+            <!-- Feature Bullets -->
+            <div class="loot-features">
+                <div class="feature-item">
+                    <span>⚡</span> Instant Price Error & Bug Deals Alerts
+                </div>
+                <div class="feature-item">
+                    <span>🛍️</span> Amazon, Flipkart & Myntra Loot Offers
+                </div>
+                <div class="feature-item">
+                    <span>✅</span> 100% Free VIP Access — No Spam
+                </div>
+            </div>
+
+            <!-- Main WhatsApp Button -->
+            <a href="https://whatsapp.com/channel/0029Vb9CPyq5fM5dhHC8iJ1q" class="cta-button" target="_blank">
+                <div class="cta-left">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/>
+                        </svg>
+                    </div>
+                    <div class="btn-text">
+                        <div class="btn-title">Join Channel Now</div>
+                        <div class="btn-sub">Free · 1 tap · Opens in WhatsApp</div>
+                    </div>
+                </div>
+                <div class="arrow-circle">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Footnote Instructions -->
+            <div class="steps-info">
+                Tap <strong>Join Channel</strong> → Tap <strong>Follow & Turn On Notifications 🔔</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Credit -->
+    <div class="footer">
+        © 2026 OMG Good Deals · Not affiliated with WhatsApp or Meta Inc.
+        <div class="footer-ads">
+            Ads Managed By <a href="https://t.me/senorita_xoxo" target="_blank">@senorita_xoxo</a>
+        </div>
+    </div>
+
+</body>
+</html>
